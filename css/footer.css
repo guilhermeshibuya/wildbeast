@@ -1,0 +1,9 @@
+.footer {
+  background: var(--gradient);
+}
+
+.footer p {
+  color: var(--w);
+  text-align: center;
+  padding: 30px;
+}

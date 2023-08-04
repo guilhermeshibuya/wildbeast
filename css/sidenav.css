@@ -1,0 +1,58 @@
+.sidenav {
+  background-color: var(--c1);
+  padding: 30px;
+}
+
+.sidenav li a {
+  display: block;
+  min-width: 60px;
+  max-width: 100px;
+  margin: 0 auto 30px auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: var(--w);
+  box-shadow: var(--box-shadow);
+  transition: 0.3s ease-out;
+}
+
+.sidenav li a:hover {
+  background-color: var(--p1);
+}
+
+@keyframes arrow {
+  from {
+    right: 30px;
+  }
+  to {
+    right: 20px;
+  }
+}
+
+@media (max-width: 760px) {
+  .sidenav {
+    overflow-x: auto;
+    padding: 0 30px;
+    position: relative;
+  }
+
+  .sidenav::after {
+    content: "→";
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    color: rgba(0, 0, 0, 0.4);
+    animation: arrow 0.6s ease-in 0s infinite alternate;
+  }
+
+  .sidenav ul {
+    display: flex;
+  }
+
+  .sidenav li {
+    flex: 1 0 60px;
+  }
+
+  .sidenav li a {
+    margin: 30px 30px 30px 0;
+  }
+}

@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --p1: #b07dfb;
+  --p2: #8844ee;
+  --w: #fff;
+  --c1: #fafbfc;
+  --gradient: linear-gradient(135deg, var(--p2), var(--p1));
+  --box-shadow: 5px 5px 15px 0 rgba(44, 44, 44, 0.15);
+}
+
+body {
+  font-family: "Vollkorn", Georgia, serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 5px;
+}

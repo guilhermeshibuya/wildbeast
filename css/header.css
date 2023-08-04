@@ -1,0 +1,46 @@
+.header {
+  background: var(--gradient);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.header__logo {
+  max-width: 200px;
+}
+
+.header__menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.header__menu a {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--w);
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 1.125rem;
+  transition: 0.3s;
+}
+
+.header__menu a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 760px) {
+  .header {
+    grid-template-columns: auto;
+    row-gap: 20px;
+  }
+
+  .header__menu {
+    gap: 10px;
+  }
+
+  .header__menu a {
+    font-size: 1rem;
+  }
+}
